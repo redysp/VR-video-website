@@ -10,11 +10,12 @@
     <script src="aframe-layout-component.min.js"></script>
     <script src="aframe-template-component.min.js"></script>
     <script src="set-image.js"></script>
+    <script src="helper.js"></script>
   </head>
   <body>
     <a-scene>
       <a-assets>
-        <img id="1" crossorigin="anonymous" src="">
+        <img id="1" crossorigin="anonymous" src="pictures/test1.JPG">
         <img id="1-thumb" crossorigin="anonymous" src="pictures/1.jpg">
         <img id="2" crossorigin="anonymous" src="">
         <img id="2-thumb" crossorigin="anonymous" src="pictures/2.jpg">
@@ -47,27 +48,27 @@
 
       <!-- Image links. -->
       <a-entity id="1-position" layout="type: line; margin: 1.5" position="20 20 20">
-        <a-entity template="src: #link" data-src="#1" data-thumb="#1-thumb" visible="false"></a-entity>
+        <a-entity template="src: #link" data-src="#1" data-thumb="#1-thumb"></a-entity>
       </a-entity>
 
       <a-entity id="2-position" layout="type: line; margin: 1.5" position="20 20 20">
-        <a-entity template="src: #link" data-src="#2" data-thumb="#2-thumb" visible="false"></a-entity>
+        <a-entity template="src: #link" data-src="#2" data-thumb="#2-thumb"></a-entity>
       </a-entity>
 
       <a-entity id="3-position" layout="type: line; margin: 1.5" position="20 20 20">
-        <a-entity template="src: #link" data-src="#3" data-thumb="#3-thumb" visible="false"></a-entity>
+        <a-entity template="src: #link" data-src="#3" data-thumb="#3-thumb"></a-entity>
       </a-entity>
 
       <a-entity id="4-position" layout="type: line; margin: 1.5" position="20 20 20">
-        <a-entity template="src: #link" data-src="#4" data-thumb="#4-thumb" visible="false"></a-entity>
+        <a-entity template="src: #link" data-src="#4" data-thumb="#4-thumb"></a-entity>
       </a-entity>
 
       <a-entity id="5-position" layout="type: line; margin: 1.5" position="20 20 20">
-        <a-entity template="src: #link" data-src="#5" data-thumb="#5-thumb" visible="false"></a-entity>
+        <a-entity template="src: #link" data-src="#5" data-thumb="#5-thumb"></a-entity>
       </a-entity>
 
       <a-entity id="6-position" layout="type: line; margin: 1.5" position="20 20 20">
-        <a-entity template="src: #link" data-src="#6" data-thumb="#6-thumb" visible="false"></a-entity>
+        <a-entity template="src: #link" data-src="#6" data-thumb="#6-thumb"></a-entity>
       </a-entity>
 
       <!-- Camera + cursor. -->
@@ -81,6 +82,5 @@
           raycaster="objects: .link"></a-cursor>
       </a-entity>
     </a-scene>
-    <script src="helper.js"></script>
   </body>
 </html>

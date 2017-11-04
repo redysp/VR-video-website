@@ -1,16 +1,19 @@
 class Button {
-	constructor(position = "20 20 20", rotation = "0 0 0",visible = "false", pointer = "") {
+	constructor(position = "20 20 20", rotation = "0 0 0", pointer = "") {
 		this.position_ = position;
 		this.rotation_ = rotation;
-		this.visible_ = visible;
 		this.pointer_ = pointer;
 	}
 
-	updatePointer(pointer) this.pointer_ = pointer;
-	updatePosition(position) this.position_ = position;
-	updateRotation(rotation) this.rotation_ = rotation;
-	visible() this.visible_ = "true";
-	invisible() this.visible_ = "false";
+	updatePointer(pointer) {
+		this.pointer_ = pointer;
+	}
+	updatePosition(position) {
+		this.position_ = position;
+	}
+	updateRotation(rotation) {
+		this.rotation_ = rotation;
+	}
 }
 
 class Node {
@@ -36,19 +39,21 @@ function findNode(id) {
 function initializeNodes() {
 	nodes.push(new Node("Sage", "pictures/test1.JPG"));
 	nodes[0].button1_.updatePosition("1 2 -4");
-	nodes[0].button1_.visible();
 	nodes[0].button1_.updatePointer("Lally");
 	nodes.push(new Node("Lally", "pictures/test2.JPG"));
-	nodes[0].button1_.updatePosition("1 2 -4");
-	nodes[0].button1_.visible();
-	nodes[0].button1_.updatePointer("Lally");
+	nodes[1].button1_.updatePosition("1 2 -4");
+	nodes[1].button1_.updatePointer("Sage");
 }
 
 function updatePage(node) {
-	var button1 = document.querySelector("#1");
-	button1.setAttribute("src", findNode(node.button1_.pointer_));
-	var button1position = document.querySelector("1-position");
+	var button1 = document.getElementById("1");
+	button1.src = findNode(node.button1_.pointer_).picture_;
+	var button1position = document.getElementById("1-position");
+	console.log(button1position);
+	button1position.setAttribute("position", node.button1_.position_);
 }
 
 window.onload = function init() {
+	initializeNodes();
+	updatePage(nodes[0]);
 };
