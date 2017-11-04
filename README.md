@@ -7,3 +7,5 @@ Access the webpage from my homepage will be work.(http://homepages.rpi.edu/~xuj1
 
 This is a website to show the videos we take.
 A simply usage of material design. May add some more things in the future.
+
+For now I'm transfering all the pages to new framework. So maybe the pages looks odd sometimes.
