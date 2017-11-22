@@ -55,3 +55,11 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.light, .page-footer .footer-copyright{
+  text-align: center;
+}
+
+a:hover{
+  color: blue;
+}

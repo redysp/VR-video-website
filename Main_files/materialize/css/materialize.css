@@ -4274,7 +4274,9 @@ nav .brand-logo {
 }
 
 nav .brand-logo.center {
-  left: 50%;
+
+
+
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -4314,7 +4316,7 @@ nav .brand-logo i.material-icons {
 nav .nav-title {
   display: inline-block;
   font-size: 32px;
-  padding: 28px 0;
+  padding: 28% 0;
 }
 
 nav ul {
@@ -8309,10 +8311,19 @@ input[type=range]:focus::-ms-fill-upper {
   visibility: visible;
   -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
           animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-  -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
 }
 
 .tap-target {
@@ -8365,10 +8376,19 @@ input[type=range]:focus::-ms-fill-upper {
 
 .tap-target-wave::after {
   visibility: hidden;
-  -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s;
-  transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s,
+ -webkit-transform .3s;
   z-index: -1;
 }
 
